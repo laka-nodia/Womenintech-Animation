@@ -1,0 +1,124 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+.skimount-block{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.skimount-img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.sun-block{
+	position: relative;
+	left: 1200px;
+	top: 150px;
+	max-width:500px ;
+}
+.sun-img{
+	width: 150px;
+	height: 150px;
+	position: absolute;	
+	animation: sunspin 20s infinite normal;
+}
+.paraplan-block{
+	position: relative;
+	left: 100px;
+	top: 250px;
+	max-width: 1500px;	
+}
+.paraplan-img{
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	animation: paraplanmove 17s infinite alternate;
+}
+.paraplan-block2{
+	position: relative;
+	left: 50px;
+	top: 50px;
+	max-width: 1500px;
+}
+.paraplan-img2{
+	width: 200px;
+	height: 200px;
+	position: absolute;	
+	animation: paraplanmove 15s infinite alternate-reverse;
+}
+.paraplan-block3{
+	position: relative;
+	left: 150px;
+	top: 150px;
+	max-width: 1500px;
+}
+.paraplan-img3{
+	width: 150px;
+	height: 150px;
+	position: absolute;	
+	animation: paraplanmove 30s infinite alternate;
+}
+.paraplan-block4{
+	position: relative;
+	left: 350px;
+	top: 50px;
+	max-width: 1000px;
+}
+.paraplan-img4{
+	width: 200px;
+	height: 200px;
+	position: absolute;	
+	animation: paraplanmove 20s infinite alternate;
+}
+.paraplan-block5{
+	position: relative;
+	left: 150px;
+	top: 250px;
+	max-width: 1500px;
+}
+.paraplan-img5{
+	width: 200px;
+	height: 200px;
+	position: absolute;	
+	animation: paraplanspin 15s infinite alternate-reverse;
+}
+.snowboarder-block{
+	position: relative;
+	left: 200px;
+	top: 500px;
+	max-width: 1300px;
+}
+.snowboarder-img{
+	width: 270px;
+	height: 270px;
+	position: absolute;	
+	animation: snowboarder 6s infinite normal;
+}
+
+@keyframes paraplanmove{
+	0% {left: 0;}
+	25%{left: 20%;}
+	50%{left: 40%;}
+	70%{left: 60%;}
+	100%{left: 100%;}
+}
+@keyframes paraplanspin{
+	0% {left: 0%; transform: rotate(45deg);}
+	20%{left: 20%; transform: rotate(-70deg);}
+	40%{left: 40%; transform: rotate(45deg);}
+	60%{left: 60%; transform: rotate(-70deg);}
+	100%{left: 100%; transform: rotate(45deg);}
+}
+@keyframes snowboarder{
+	0% {left: 0%;}
+	20%{left: 30%;}
+	100%{left: 100%; transform: rotate(-360deg);}
+}
+@keyframes sunspin {
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(360deg);}
+}
+
+
